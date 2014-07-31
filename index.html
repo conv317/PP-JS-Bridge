@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>JS Bridge Example</title>
+
+</head>
+<body style="margin-left: auto;margin-right: auto;width: 70%;background-color: #b0e0e6;"> 
+
+<!-- PayPal Bridge Files. -->
+<script src="ppbridge.js"></script>
+<script src="core.js"></script>
+<script type="text/javascript">
+
+document.addEventListener("DOMContentLoaded", function(){
+	// Initialize the actions, handlers and callbacks
+	PayPalApp.init(merchantConfig); 
+  //  PayPalApp.call("MerchantTitleBarDisabledBack"); 	
+}, false);
+
+</script>
+
+<p>Enable Back Button (PayPalApp.call("MerchantTitleBarBackToPP");)</p> 
+<button onclick='PayPalApp.call("MerchantTitleBarBackToPP");'>Enable Button</button><br/> 
+
+<p>Disable Back Button (PayPalApp.call("MerchantTitleBarDisabledBack");)</p> 
+<button onclick='PayPalApp.call("MerchantTitleBarDisabledBack");'>Disable Button</button><br/> 
+
+<p>Dismiss Web View PayPalApp.call({func:"DismissWebView"});</p> 
+<button onclick='PayPalApp.call({func:"DismissWebView"});'>Dismiss Web View</button><br/> 
+
+</body>
+</html>
