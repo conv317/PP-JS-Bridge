@@ -16,6 +16,10 @@ Installation
 
 Note: Do not alter ppbridge.js. core.js can be modified to fit the enhanced checkin experience 
 
+Example Screenshots
+--------------------
+http://covafeas.clarify-it.com/d/dql4xn
+
 
 Interfaces 
 -----------
